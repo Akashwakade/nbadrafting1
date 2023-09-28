@@ -1,0 +1,96 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: blanchedalmond;
+}
+nav{
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style: none;
+    /* text-decoration: none; */
+    display: flex;
+    /* justify-content: space-between; */
+    background-color:green;
+    padding: 10px;
+}
+
+nav li{
+    margin-right: 20px;
+}
+
+nav a{
+    text-decoration:solid;
+    color:white
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#filter-container {
+    margin-bottom: 20px;
+}
+
+#filter-container label,
+#filter-container select,
+#filter-container input[type="date"],
+#filter-container button {
+    margin-right: 10px;
+}
+
+#games-container {
+   
+        /* border: 2px solid red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+    
+    
+}
+
+.game-card {
+    border: 1px solid black;
+    padding: 10px;
+   width:200px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-card h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.game-card p {
+    margin: 5px 0;
+}
+
+/* Pagination styles */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 90%;
+    /* border: 2px solid red; */
+}
+
+.page-link{
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    /* border: 2px solid blue; */
+}
+
+.page-link.active {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* ... Other styles ... */
