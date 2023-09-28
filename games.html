@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Games App</title>
+    <link rel="stylesheet" href="games-style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Players</a></li>
+            <li><a href="games.html">Games</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div id="filter-container">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" required>
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" required>
+            <label for="season">Season:</label>
+            <select id="season">
+                <option value="">All Seasons</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <!-- ... Add options for 2013 to 2020 ... -->
+            </select>
+            <button id="filter-btn">Filter</button>
+        </div>
+        <div id="games-container"></div>
+      
+    </div>
+
+    <div id="pagination"></div>
+    <script src="games-script.js"></script>
+</body>
+</html>
